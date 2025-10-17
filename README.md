@@ -1,5 +1,5 @@
 # PocketVec
-<img width="532" height="297" alt="image" src="https://github.com/user-attachments/assets/14411e59-2dff-402c-ae36-6130760cb2e5" />
+                                       <img width="532" height="297" alt="image" src="https://github.com/user-attachments/assets/14411e59-2dff-402c-ae36-6130760cb2e5" />
 
 PocketVec is a clean, drop-in vector database for local projects. The core (`PocketVecCore`) runs entirely on your machine, keeps data in simple `.pt` + SQLite files, and ships with a FastAPI wrapper (`pocketvec_service.py`), smoke tests, and benchmarking utilities. Drop it into scripts, notebooks, or small services when you need vector search without managing heavy infrastructure.
 
