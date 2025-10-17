@@ -24,7 +24,7 @@ PocketVec's adaptive search mode keeps track of how often each vector appears in
 3. Runs an exact search over that smaller candidate set.
 ## Adaptive Learning in Action 
 <p align="center">
-<img width="1200" height="800" alt="adaptive_learning" src="https://github.com/user-attachments/assets/65ffe557-4c79-4c1b-87e7-4442cbf33d3a" /> </p>
+<img width="600" height="400" alt="adaptive_learning" src="https://github.com/user-attachments/assets/65ffe557-4c79-4c1b-87e7-4442cbf33d3a" /> </p>
 The line starts near 3 ms and settles closer to 2 ms as the system repeatedly sees the same queries. That drop is the energy scores steering adaptive search toward the right neighborhood without scanning everything.
 
 
