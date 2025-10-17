@@ -22,6 +22,11 @@ PocketVec's adaptive search mode keeps track of how often each vector appears in
 1. Chooses a handful of starting points based on those energy scores.
 2. Expands to their pre-built neighbor windows.
 3. Runs an exact search over that smaller candidate set.
+## Adaptive Learning in Action 
+<p align="center">
+<img width="1200" height="800" alt="adaptive_learning" src="https://github.com/user-attachments/assets/65ffe557-4c79-4c1b-87e7-4442cbf33d3a" /> </p>
+The line starts near 3 ms and settles closer to 2 ms as the system repeatedly sees the same queries. That drop is the energy scores steering adaptive search toward the right neighborhood without scanning everything.
+
 
 Hot items become faster to retrieve, while rarely used items keep their baseline probability. This makes adaptive search a good default for workloads with repeating or trending queries - latency drops automatically as the system "learns".
 
