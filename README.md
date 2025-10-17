@@ -3,7 +3,7 @@
   <img width="532" height="297" alt="image" src="https://github.com/user-attachments/assets/14411e59-2dff-402c-ae36-6130760cb2e5" />
 </p>
 
-PocketVec is a clean, drop-in vector database for local projects. The core (`PocketVecCore`) runs entirely on your machine, keeps data in simple `.pt` + SQLite files, and ships with a FastAPI wrapper (`pocketvec_service.py`), smoke tests, and benchmarking utilities. Drop it into scripts, notebooks, or small services when you need vector search without managing heavy infrastructure.
+PocketVec is a clean, drop-in vector database engine for local projects. The core (`PocketVecCore`) runs entirely on your machine, keeps data in simple `.pt` + SQLite files, and ships with a FastAPI wrapper (`pocketvec_service.py`), smoke tests, and benchmarking utilities. Drop it into scripts, notebooks, or small services when you need vector search without managing heavy infrastructure.
 
 ## Features
 - PyTorch backed vectors with automatic capacity growth.
@@ -13,11 +13,8 @@ PocketVec is a clean, drop-in vector database for local projects. The core (`Poc
 - Benchmarks covering speed vs accuracy, adaptive learning, and scalability.
 
 ## Repository Layout
-- `pocketvec_core.py` - main core class.
+- `pocketvec_core.py` - main core engine class.
 - `pocketvec_service.py` - FastAPI application (`uvicorn pocketvec_service:app`).
-- `smoke_test.py` - end-to-end walkthrough over PocketVecCore.
-- `benchmark.py` - generates CSVs and charts profiling performance.
-- `test_pocketvec_service.py` - service regression using `TestClient`.
 - `howtouse.py` - minimal example script.
 
 ## Adaptive Search (Energy Driven)
